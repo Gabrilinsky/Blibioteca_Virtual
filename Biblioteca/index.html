@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Gabriel Naranjo" />
-  <title>Tacos Palace</title>
+  <title>Biblioteca Horizonte</title>
   <link rel="stylesheet" href="static/css/style.css" />
 </head>
 <body>
 
   <section class="Barra">
-    <img src="static/images/logo.png" alt="Logo" />
+    <img src="static/images/Libro.png" alt="Logo" />
     <nav class="navbar bg-body-tertiary">
       <div class="container">
-        <h1>Tacos</h1>
-        <h1 class="navbar-brand">Palace</h1>
+        <h1>Biblioteca</h1>
+        <h1 class="navbar-brand">Horizonte</h1>
         <form class="d-flex" role="Email">
           <input class="form-control me-2" type="Email" placeholder="Email" aria-label="Email" />
-          <button class="btn" type="submit">Login</button>
-          <div class="carrito">
-          <img src="static/images/carrito.png" alt="Carrito" />
+          <button class="btn" type="submit">Ingresar</button>
+          <div class="Seleccionado">
+          <img src="static/images/libros.png" alt="Libros" />
           <span class="num">0</span>
           </div>
         </form>
@@ -28,33 +28,33 @@
   </section>
 
 <section class="Cuadros">
-  <div class="comida">
-    <img class="caja" src="static/images/enchiladas.jpg" alt="Enchiladas" />
+  <div class="Libro">
+    <img class="caja" src="static/images/Libro.png" alt="Novelas" />
     <p>Novelas</p>
   </div>
 
-  <div class="comida">
-    <img class="caja" src="static/images/tacos.jpg" alt="Tacos" />
+  <div class="Libro">
+    <img class="caja" src="static/images/ciencia.png" alt="ciencia" />
     <p>Ciencia</p>
   </div>
 
-  <div class="comida">
-    <img class="caja" src="static/images/flautas.jpg" alt="Flautas" />
+  <div class="Libro">
+    <img class="caja" src="static/images/Estatua.png" alt="Historia" />
     <p>Historia</p>
   </div>
 
-  <div class="comida">
-    <img class="caja" src="static/images/gorditas.jpg" alt="Gorditas" />
+  <div class="Libro">
+    <img class="caja" src="static/images/PC.png" alt="tecnologia" />
     <p>tecnologia</p>
   </div>
 
-  <div class="comida">
-    <img class="caja" src="static/images/tostadas.jpg" alt="Tostadas" />
+  <div class="Libro">
+    <img class="caja" src="static/images/Pintura.png" alt="Arte" />
     <p>Arte</p>
   </div>
 
-  <div class="comida">
-    <img class="caja" src="static/images/enfrijoladas.jpg" alt="Enfrijoladas" />
+  <div class="Libro">
+    <img class="caja" src="static/images/oso.png" alt="" />
     <p>Infantil</p>
   </div>
 </section>
@@ -62,40 +62,54 @@
  <main class="principal">
   <section class="izquierda">
     <div class="bloque-titulo">
-      <h2>La mejor<br />variedad<br />en<br />platillos<br />de<br />comida<br /><span class="negrita">mexicana</span></h2>
+      <h2>Descubre<br />Nuevas<br />Historias<br /></h2>
     </div>
 
     <div class="contenido-izquierda">
-      <p class="texto-domicilio">
-        Contamos<br />con<br />
-        <span class="subrayado">servicio</span> a<br />
-        <span class="naranja">domicilio</span>
+      <p class="texto-libros">
+        Explora<br />nuestra<br /> Biblioteca<br> virtual <br>
       </p>
-      <!-- Asegúrate de poner el nombre y extensión exacta de tu imagen -->
-      <img id="Pintura" class="caja-imagen" src="static/images/comida-mexicana.jpg" alt="Comida Mexicana" />
+<video autoplay muted loop playsinline>
+      <source src="static/videos/videoplayback.mp4" type="video/mp4" />
+      Tu navegador no soporta videos HTML5.
+    </video>
     </div>
   </section>
 
   <section class="derecha">
-    <h2>Recomendados:</h2>
+    <h2> Libros Recomendados:</h2>
     
     <div class="contenedor">
-      <img src="static/images/tacos.jpg" alt="Orden de Tacos" class="img-recomendado" />
+      <img src="static/images/Garcia.png" alt="Cien años de soledad"  />
       <div class="info-tarjeta">
         <div class="texto-tarjeta">
-          <h3>Orden de Tacos</h3>
-          <a href="#">Ver más...</a>
+          <h3>Cien años de soledad</h3>
+          <p>Gabriel García Márquez</p>
+          <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/Garc%C3%ADa%20M%C3%A1rquez%20Gabriel%20-%20Cien%20a%C3%B1os%20de%20soledad.pdf">Ver más...</a>
         </div>
         <button class="btn-mas">+</button>
       </div>
     </div>
 
     <div class="contenedor">
-      <img src="static/images/flautas.jpg" alt="Orden de Flautas" class="img-recomendado" />
+      <img src="static/images/Yuval.png" alt="Sapiens"  />
       <div class="info-tarjeta">
         <div class="texto-tarjeta">
-          <h3>Orden de Flautas</h3>
-          <a href="#">Ver más...</a>
+          <h3>Sapiens</h3>
+          <p>Yuval Noah Harari</p>
+          <a href="https://www.files.ecyte.org/archivos/PDF/SAPIENS%20-%20DE%20ANIMALES%20A%20DIOSES%20-%20YUVAL%20NOAH%20HARARI.pdf">Ver más...</a>
+        </div>
+        <button class="btn-mas">+</button>
+      </div>
+    </div>
+
+        <div class="contenedor">
+      <img src="static/images/El principito.png" alt="El principito" />
+      <div class="info-tarjeta">
+        <div class="texto-tarjeta">
+          <h3>El principito</h3>
+          <p>Antoine de Saint-Exupéry</p>
+          <a href="https://web.seducoahuila.gob.mx/biblioweb/upload/el%20principito.pdf">Ver más...</a>
         </div>
         <button class="btn-mas">+</button>
       </div>

@@ -1,0 +1,153 @@
+
+.principal {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.izquierda {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  background-color: #dcdcdc; /* Fondo gris claro de la imagen */
+  padding: 30px;
+  border-radius: 4px;
+  gap: 20px;
+}
+
+.bloque-titulo h2 {
+  font-size: 26px;
+  line-height: 1.15;
+  margin: 0;
+  color: #000;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.contenido-izquierda {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.texto-libros {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.subrayado {
+  text-decoration: underline;
+}
+
+.navbar-brand{
+    color: #779cbc;
+}
+
+.caja-imagen {
+  width: 380px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Tarjetas de Recomendados (Lado Derecho) */
+.derecha {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.derecha h2 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+}
+
+.contenedor {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 0;
+}
+
+
+.info-tarjeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.texto-tarjeta h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #222;
+}
+
+.texto-tarjeta a {
+  font-size: 12px;
+  color: #555;
+  text-decoration: underline;
+}
+
+.btn-mas {
+  background-color: #18354c;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+  background-color: #18354c;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.Cuadros {
+  background-color: #d2dee9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Libro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 110px; /* Ancho fijo para cada tarjeta */
+}
+
+.Libro img {
+  width: 100px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.Libro p {
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
