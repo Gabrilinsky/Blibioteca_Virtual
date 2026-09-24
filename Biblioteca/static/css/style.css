@@ -1,4 +1,6 @@
-
+body{
+background-color: #fefefe;
+}
 .principal {
   display: flex;
   gap: 30px;
