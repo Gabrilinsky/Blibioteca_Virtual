@@ -251,3 +251,36 @@ margin-left: 10px;
   align-items: center;
   justify-content: center;
 }
+/* Contenedor principal con tamaño reservado */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* El video ocupa todo el ancho */
+.principal-video {
+  width: 100%;
+  display: block;
+}
+
+/* La imagen se posiciona exactamente encima del video pero oculta */
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none; /* Evita interrupciones en la lectura del cursor */
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Al pasar el cursor por el contenedor, la imagen se vuelve visible */
+.video-container:hover .hover-image {
+  opacity: 1;
+}
