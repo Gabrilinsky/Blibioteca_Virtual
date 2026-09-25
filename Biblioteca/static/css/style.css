@@ -1,122 +1,100 @@
-body{
-background-color: #fefefe;
-}
-.principal {
-  display: flex;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+* {
+  box-sizing: border-box;
 }
 
-.izquierda {
-  flex: 3;
-  display: flex;
-  align-items: center;
-  background-color: #dcdcdc; /* Fondo gris claro de la imagen */
-  padding: 30px;
-  border-radius: 4px;
-  gap: 20px;
-}
-
-.bloque-titulo h2 {
-  font-size: 26px;
-  line-height: 1.15;
+body {
   margin: 0;
-  color: #000;
-}
-
-.negrita {
-  font-weight: bold;
-}
-
-.contenido-izquierda {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.texto-libros {
-  font-size: 18px;
-  line-height: 1.3;
-  margin: 0;
-}
-
-.subrayado {
-  text-decoration: underline;
-}
-
-.navbar-brand{
-    color: #779cbc;
-}
-
-.caja-imagen {
-  width: 380px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 4px;
-}
-
-/* Tarjetas de Recomendados (Lado Derecho) */
-.derecha {
-  flex: 1.2;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.derecha h2 {
-  font-size: 22px;
-  margin: 0 0 10px 0;
-}
-
-.contenedor {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  overflow: hidden;
   padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
 }
 
-
-.info-tarjeta {
+.Barra {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 12px;
+  padding: 15px 40px;
+  background-color: #ffffff;
 }
 
-.texto-tarjeta h3 {
-  margin: 0;
-  font-size: 14px;
-  color: #222;
+.Barra > img {
+  height: 45px;
 }
 
-.texto-tarjeta a {
-  font-size: 12px;
-  color: #555;
-  text-decoration: underline;
+.navbar {
+  width: 100%;
 }
 
-.btn-mas {
-  background-color: #18354c;
-  color: white;
-  border: none;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  font-weight: bold;
-  cursor: pointer;
+.navbar-brand {
+color: #1a56b4;
+font-weight: bold;
+}
+
+.brand-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 12px;
 }
 
-.btn{
+.brand-container h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #000;
+ line-height: 1.1;
+}
+
+.brand-container h1.navbar-brand {
+  color: #2b5b84;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.login-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-control {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-ingresar {
   background-color: #18354c;
   color: white;
   border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Seleccionado {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Seleccionado img {
+  width: 30px;
+  height: 30px;
+}
+
+.Seleccionado .texto-seleccion {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.1;
+}
+
+.Seleccionado .num {
   font-weight: bold;
+  font-size: 16px;
+  margin-left: 4px;
 }
 
 .Cuadros {
@@ -124,32 +102,152 @@ background-color: #fefefe;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  padding: 12px ;
-  width: 80%;
-  box-sizing: border-box;
+  gap: 20px;
+  padding: 15px 0;
+  width: 100%;
 }
 
-.Libro{
+.Libro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 110px; /* Ancho fijo para cada tarjeta */
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  width: 90px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 .Libro img {
-  width: 100px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.Libro p {
+margin-left: 10px;
+  text-align: left;
+}
+
+
+.principal {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.izquierda {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bloque-titulo {
+  flex: 1;
+}
+
+.bloque-titulo h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 15px 0;
+  color: #000;
+}
+
+.linea-azul {
+  width: 40px;
+  height: 4px;
+  background-color: #2b5b84;
+  margin-bottom: 15px;
+}
+
+.bloque-titulo p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.contenido-izquierda {
+  flex: 1.5;
+}
+
+.contenido-izquierda video {
+  width: 100%;
+  max-width: 400px;
+}
+
+.video-sub {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.derecha h2 {
+  font-size: 20px;
+  margin: 0 0 5px 0;
+}
+
+.contenedor {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  align-items: center;
+  gap: 12px;
+}
+
+.contenedor img {
+  width: 70px;
   height: 90px;
   object-fit: cover;
   border-radius: 4px;
 }
 
-.Libro p {
-  margin-top: 6px;
-  margin-bottom: 0;
-  font-family: sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: #000;
-  text-align: center;
+.info-tarjeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.texto-tarjeta h3 {
+  margin: 0 0 4px 0;
+  font-size: 15px;
+  color: #222;
+}
+
+.texto-tarjeta p {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.texto-tarjeta a {
+  font-size: 12px;
+  color: #2b5b84;
+  text-decoration: underline;
+}
+
+.btn-mas {
+  background-color: #18354c;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
