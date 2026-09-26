@@ -15,6 +15,7 @@ body {
   justify-content: space-between;
   padding: 15px 40px;
   background-color: #ffffff;
+  width: 100%;
 }
 
 .Barra > img {
@@ -40,7 +41,12 @@ font-weight: bold;
   margin: 0;
   font-size: 20px;
   color: #000;
- line-height: 1.1;
+  line-height: 1.1;
+}
+
+.brand-container img{
+  height: 45px;
+  width: auto;
 }
 
 .brand-container h1.navbar-brand {
@@ -103,7 +109,7 @@ font-weight: bold;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  padding: 15px 0;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -114,7 +120,7 @@ font-weight: bold;
   background: #ffffff;
   padding: 10px;
   border-radius: 6px;
-  width: 90px;
+  width: 100px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
@@ -139,9 +145,15 @@ margin-left: 10px;
 }
 
 .izquierda {
+  flex: 2;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: #e8ecef;
+  padding: 30px;
+  border-radius: 8px;
 }
 
 .bloque-titulo {
@@ -251,7 +263,7 @@ margin-left: 10px;
   align-items: center;
   justify-content: center;
 }
-/* Contenedor principal con tamaño reservado */
+
 .video-container {
   position: relative;
   width: 100%;
@@ -261,13 +273,13 @@ margin-left: 10px;
   cursor: pointer;
 }
 
-/* El video ocupa todo el ancho */
+
 .principal-video {
   width: 100%;
   display: block;
 }
 
-/* La imagen se posiciona exactamente encima del video pero oculta */
+
 .hover-image {
   position: absolute;
   top: 0;
@@ -276,11 +288,11 @@ margin-left: 10px;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  pointer-events: none; /* Evita interrupciones en la lectura del cursor */
+  pointer-events: none; 
   transition: opacity 0.2s ease-in-out;
 }
 
-/* Al pasar el cursor por el contenedor, la imagen se vuelve visible */
+
 .video-container:hover .hover-image {
   opacity: 1;
 }

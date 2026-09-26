@@ -1,133 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Gabriel Naranjo" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Naranjo">
     <title>Biblioteca Horizonte</title>
-    <link rel="stylesheet" href="static/css/style.css" />
-  </head>
-  <body>
-    <section class="Barra">
-      <img src="static/images/Libro.png" alt="Logo" />
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <h1>
-            Biblioteca <br>
-            <span class="navbar-brand">Horizonte</span>
-          </h1>
-          <form class="d-flex" role="Email">
-            <input
-              class="form-control me-2"
-              type="Email"
-              placeholder="Email"
-              aria-label="Email"
-            />
-            <button class="btn" type="submit">Ingresar</button>
-            <div class="Seleccionado">
-              <img src="static/images/libros.png" alt="Libros" />
-              <span class="num">0</span>
-            </div>
-          </form>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <header class="Barra">
+        <div class="brand-container">
+            <img src="static/images/Libro.png" alt="Logo">
+            <h1>Biblioteca <br><span class="navbar-brand">Horizonte</span></h1>
         </div>
-      </nav>
-    </section>
 
-    <section class="Cuadros">
-      <div class="Libro">
-        <img class="caja" src="static/images/Libro.png" alt="Novelas" />
-        <p>Novelas</p>
-      </div>
+        <div class="form-header">
+            <form class="login-form" id="loginForm">
+                <input class="form-control" type="email" id="emailInput" placeholder="Email" aria-label="Email" required>
+                <button class="btn-ingresar" type="submit">Ingresar</button>
+            </form>
 
-      <div class="Libro">
-        <img class="caja" src="static/images/ciencia.png" alt="ciencia" />
-        <p>Ciencia</p>
-      </div>
+            <div class="Seleccionado">
+                <img src="static/images/Libros.png" alt="Libros">
+                <div class="texto-seleccion">
+                    Libros<br>seleccionados: <span class="num">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-      <div class="Libro">
-        <img class="caja" src="static/images/Estatua.png" alt="Historia" />
-        <p>Historia</p>
-      </div>
-
-      <div class="Libro">
-        <img class="caja" src="static/images/PC.png" alt="tecnologia" />
-        <p>tecnologia</p>
-      </div>
-
-      <div class="Libro">
-        <img class="caja" src="static/images/Pintura.png" alt="Arte" />
-        <p>Arte</p>
-      </div>
-
-      <div class="Libro">
-        <img class="caja" src="static/images/oso.png" alt="" />
-        <p>Infantil</p>
-      </div>
-    </section>
+    <!-- Se cambió <section> a <div> para corregir la advertencia de falta de título -->
+    <div class="Cuadros">
+        <div class="Libro">
+            <img class="caja" src="static/images/Libro.png" alt="Novelas">
+            <p>Novelas</p>
+        </div>
+        <div class="Libro">
+            <img class="caja" src="static/images/ciencia.png" alt="Ciencia">
+            <p>Ciencia</p>
+        </div>
+        <div class="Libro">
+            <img class="caja" src="static/images/Estatua.png" alt="Historia">
+            <p>Historia</p>
+        </div>
+        <div class="Libro">
+            <img class="caja" src="static/images/PC.png" alt="Tecnología">
+            <p>Tecnología</p>
+        </div>
+        <div class="Libro">
+            <img class="caja" src="static/images/Pintura.png" alt="Arte">
+            <p>Arte</p>
+        </div>
+        <div class="Libro">
+            <img class="caja" src="static/images/oso.png" alt="Infantil">
+            <p>Infantil</p>
+        </div>
+    </div>
 
     <main class="principal">
       <section class="izquierda">
-        <div class="bloque-titulo">
-          <h2>Descubre<br />Nuevas<br />Historias<br /></h2>
+    <div class="bloque-titulo">
+        <h2>Descubre<br>nuevas historias</h2>
+        <div class="linea-azul"></div>
+        <p>Explora nuestra biblioteca virtual y encuentra libros para todos los gustos. Conocimiento, aventura y mucho más al alcance de un clic.</p>
+    </div>
+
+    <div class="video-sub">
+        <div class="video-container" id="videoContainer">
+            <video id="miVideo" class="principal-video" autoplay muted loop playsinline>
+                <source src="static/videos/videoplayback.mp4" type="video/mp4">
+            </video>
+            <img id="miImagen" src="static/images/Prince.png" alt="Miniatura" class="hover-image">
         </div>
+        <p class="pie-video">Conoce la Biblioteca Horizonte</p>
+    </div>
+</section>
+        <section class="derecha">
+            <h2>Libros recomendados:</h2>
 
-<div class="video-container" id="videoContainer">
-  <video id="miVideo" autoplay muted loop playsinline class="principal-video">
-    <source src="static/videos/videoplayback.mp4" type="video/mp4">
-    Tu navegador no soporta videos HTML5.
-  </video>
-  <img id="miImagen" src="static/images/Prince.png" alt="Miniatura" class="hover-image">
-</div>
-      </section>
-
-      <section class="derecha">
-        <h2>Libros Recomendados:</h2>
-
-        <div class="contenedor">
-          <img src="static/images/Garcia.png" alt="Cien años de soledad" />
-          <div class="info-tarjeta">
-            <div class="texto-tarjeta">
-              <h3>Cien años de soledad</h3>
-              <p>Gabriel García Márquez</p>
-              <a
-                href="https://web.seducoahuila.gob.mx/biblioweb/upload/Garc%C3%ADa%20M%C3%A1rquez%20Gabriel%20-%20Cien%20a%C3%B1os%20de%20soledad.pdf"
-                >Ver más...</a
-              >
+            <div class="contenedor">
+                <img src="static/images/Garcia.png" alt="Cien años de soledad">
+                <div class="info-tarjeta">
+                    <div class="texto-tarjeta">
+                        <h3>Cien años de soledad</h3>
+                        <p>Gabriel García Márquez</p>
+                        <a href="#" target="_blank">Ver más...</a>
+                    </div>
+                    <button class="btn-mas" type="button">+</button>
+                </div>
             </div>
-            <button class="btn-mas">+</button>
-          </div>
-        </div>
 
-        <div class="contenedor">
-          <img src="static/images/Yuval.png" alt="Sapiens" />
-          <div class="info-tarjeta">
-            <div class="texto-tarjeta">
-              <h3>Sapiens</h3>
-              <p>Yuval Noah Harari</p>
-              <a
-                href="https://www.files.ecyte.org/archivos/PDF/SAPIENS%20-%20DE%20ANIMALES%20A%20DIOSES%20-%20YUVAL%20NOAH%20HARARI.pdf"
-                >Ver más...</a
-              >
+            <div class="contenedor">
+                <img src="static/images/Yuval.png" alt="Sapiens">
+                <div class="info-tarjeta">
+                    <div class="texto-tarjeta">
+                        <h3>Sapiens</h3>
+                        <p>Yuval Noah Harari</p>
+                        <a href="#" target="_blank">Ver más...</a>
+                    </div>
+                    <button class="btn-mas" type="button">+</button>
+                </div>
             </div>
-            <button class="btn-mas">+</button>
-          </div>
-        </div>
 
-        <div class="contenedor">
-          <img src="static/images/El principito.png" alt="El principito" />
-          <div class="info-tarjeta">
-            <div class="texto-tarjeta">
-              <h3>El principito</h3>
-              <p>Antoine de Saint-Exupéry</p>
-              <a
-                href="https://web.seducoahuila.gob.mx/biblioweb/upload/el%20principito.pdf"
-                >Ver más...</a
-              >
+            <div class="contenedor">
+                <!-- Se corrigió el espacio en la URL de la imagen reemplazándolo por %20 -->
+                <img src="static/images/El%20principito.png" alt="El principito">
+                <div class="info-tarjeta">
+                    <div class="texto-tarjeta">
+                        <h3>El principito</h3>
+                        <p>Antoine de Saint-Exupéry</p>
+                        <a href="#" target="_blank">Ver más...</a>
+                    </div>
+                    <button class="btn-mas" type="button">+</button>
+                </div>
             </div>
-            <button class="btn-mas">+</button>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-  </body>
+
+    <script src="static/js/script.js"></script>
+</body>
 </html>
