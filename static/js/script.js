@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         formEmail.addEventListener("submit", function (event) {
             event.preventDefault(); 
 
-            const correo = inputEmail.value.trim();
-
+             const correo = inputEmail.value.trim();
             if (correo !== "") {
                 alert("¡Bienvenido/a! Has ingresado con el correo: " + correo);
 
