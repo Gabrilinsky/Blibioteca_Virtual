@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (formEmail) {
         formEmail.addEventListener("submit", function (event) {
-            event.preventDefault(); // Evita que la página se recargue
+            event.preventDefault(); 
 
             const correo = inputEmail.value.trim();
 
