@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* Todo el sitio web*/
 body {
   margin: 0;
   padding: 0;
@@ -9,12 +10,14 @@ body {
   background-color: #fefefe;
 }
 
+/*La barra de navegacion dentro del header */
 .Barra {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 40px;
   background-color: #ffffff;
+  width: 100%;
 }
 
 .Barra > img {
@@ -25,9 +28,11 @@ body {
   width: 100%;
 }
 
+/* Navbar-brand el tamaño del texto: Horizonte */
 .navbar-brand {
 color: #1a56b4;
 font-weight: bold;
+font-size: 28px;
 }
 
 .brand-container {
@@ -40,7 +45,12 @@ font-weight: bold;
   margin: 0;
   font-size: 20px;
   color: #000;
- line-height: 1.1;
+  line-height: 1.1;
+}
+
+.brand-container img{
+  height: 45px;
+  width: auto;
 }
 
 .brand-container h1.navbar-brand {
@@ -98,35 +108,44 @@ font-weight: bold;
 }
 
 .Cuadros {
-  background-color: #d2dee9;
   display: flex;
+  background-color: #d2dee9;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  padding: 15px 0;
-  width: 100%;
+  gap: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+  flex-wrap: wrap;
+  margin:  auto;
+  box-sizing: border-box;
+  border-radius: 8px;
 }
 
 .Libro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #ffffff;
-  padding: 10px;
-  border-radius: 6px;
-  width: 90px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 15px 10px;
+    border-radius: 6px;
+    flex: 2;                   
+    max-width: 110px;          
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .Libro img {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
 }
 
 .Libro p {
-margin-left: 10px;
-  text-align: left;
+margin: 8px 0 0 0;
+font-size: 13px;
+color: #000000;
+text-align: center;
 }
 
 
@@ -139,9 +158,15 @@ margin-left: 10px;
 }
 
 .izquierda {
+  flex: 2;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: #e8ecef;
+  padding: 30px;
+  border-radius: 8px;
 }
 
 .bloque-titulo {
@@ -192,7 +217,7 @@ margin-left: 10px;
 
 .derecha h2 {
   font-size: 20px;
-  margin: 0 0 5px 0;
+  margin: 0 0 2px 0;
 }
 
 .contenedor {
@@ -251,7 +276,7 @@ margin-left: 10px;
   align-items: center;
   justify-content: center;
 }
-/* Contenedor principal con tamaño reservado */
+
 .video-container {
   position: relative;
   width: 100%;
@@ -261,13 +286,13 @@ margin-left: 10px;
   cursor: pointer;
 }
 
-/* El video ocupa todo el ancho */
+
 .principal-video {
   width: 100%;
   display: block;
 }
 
-/* La imagen se posiciona exactamente encima del video pero oculta */
+
 .hover-image {
   position: absolute;
   top: 0;
@@ -276,11 +301,11 @@ margin-left: 10px;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  pointer-events: none; /* Evita interrupciones en la lectura del cursor */
+  pointer-events: none; 
   transition: opacity 0.2s ease-in-out;
 }
 
-/* Al pasar el cursor por el contenedor, la imagen se vuelve visible */
+
 .video-container:hover .hover-image {
   opacity: 1;
 }
