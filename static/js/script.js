@@ -1,3 +1,4 @@
+/*El boton de ingresar del correo */
 document.addEventListener("DOMContentLoaded", function () {
     const formEmail = document.getElementById("loginForm");
     const inputEmail = document.getElementById("emailInput");
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+    /* Con el boton + apretas el boton */
     const botonesMas = document.querySelectorAll(".btn-mas");
     const spanNum = document.querySelector(".num");
 

@@ -1,123 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Gabriel Naranjo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gabriel Naranjo" />
     <title>Biblioteca Horizonte</title>
-    <link rel="stylesheet" href="static/css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <!--El titulo con el boton de Ingresar con el correo-->
     <header class="Barra">
-        <div class="brand-container">
-            <img src="static/images/Libro.png" alt="Logo">
-            <h1>Biblioteca <br><span class="navbar-brand">Horizonte</span></h1>
-        </div>
+      <div class="brand-container">
+        <img src="static/images/Libro.png" alt="Logo" />
+        <h1>Biblioteca <br /><span class="navbar-brand">Horizonte</span></h1>
+      </div>
 
-        <div class="form-header">
-            <form class="login-form" id="loginForm">
-                <input class="form-control" type="email" id="emailInput" placeholder="Email" aria-label="Email" required>
-                <button class="btn-ingresar" type="submit">Ingresar</button>
-            </form>
+      <div class="form-header">
+        <form class="login-form" id="loginForm">
+          <input
+            class="form-control"
+            type="email"
+            id="emailInput"
+            placeholder="Email"
+            aria-label="Email"
+            required
+          />
+          <button class="btn-ingresar" type="submit">Ingresar</button>
+        </form>
 
-            <div class="Seleccionado">
-                <img src="static/images/libros.png" alt="Libros">
-                <div class="texto-seleccion">
-                    Libros<br>seleccionados: <span class="num">0</span>
-                </div>
-            </div>
+        <div class="Seleccionado">
+          <img src="static/images/libros.png" alt="Libros" />
+          <div class="texto-seleccion">
+            Libros<br />seleccionados: <span class="num">0</span>
+          </div>
         </div>
+      </div>
     </header>
 
-    
+    <!--Los cuadros de categorias de libros-->
     <nav class="Cuadros">
-        <div class="Libro">
-            <img class="caja" src="static/images/Libro.png" alt="Novelas">
-            <p>Novelas</p>
-        </div>
-        <div class="Libro">
-            <img class="caja" src="static/images/ciencia.png" alt="Ciencia">
-            <p>Ciencia</p>
-        </div>
-        <div class="Libro">
-            <img class="caja" src="static/images/Estatua.png" alt="Historia">
-            <p>Historia</p>
-        </div>
-        <div class="Libro">
-            <img class="caja" src="static/images/PC.png" alt="Tecnología">
-            <p>Tecnología</p>
-        </div>
-        <div class="Libro">
-            <img class="caja" src="static/images/Pintura.png" alt="Arte">
-            <p>Arte</p>
-        </div>
-        <div class="Libro">
-            <img class="caja" src="static/images/oso.png" alt="Infantil">
-            <p>Infantil</p>
-        </div>
+      <div class="Libro">
+        <img class="caja" src="static/images/Libro.png" alt="Novelas" />
+        <p>Novelas</p>
+      </div>
+      <div class="Libro">
+        <img class="caja" src="static/images/ciencia.png" alt="Ciencia" />
+        <p>Ciencia</p>
+      </div>
+      <div class="Libro">
+        <img class="caja" src="static/images/Estatua.png" alt="Historia" />
+        <p>Historia</p>
+      </div>
+      <div class="Libro">
+        <img class="caja" src="static/images/PC.png" alt="Tecnología" />
+        <p>Tecnología</p>
+      </div>
+      <div class="Libro">
+        <img class="caja" src="static/images/Pintura.png" alt="Arte" />
+        <p>Arte</p>
+      </div>
+      <div class="Libro">
+        <img class="caja" src="static/images/oso.png" alt="Infantil" />
+        <p>Infantil</p>
+      </div>
     </nav>
 
+<!--Un main con una clase que tiene el video -->
     <main class="principal">
       <section class="izquierda">
-    <div class="bloque-titulo">
-        <h2>Descubre<br>nuevas historias</h2>
-        <div class="linea-azul"></div>
-        <p>Explora nuestra biblioteca virtual y encuentra libros para todos los gustos. Conocimiento, aventura y mucho más al alcance de un clic.</p>
-    </div>
-
-    <div class="video-sub">
-        <div class="video-container" id="videoContainer">
-            <video id="miVideo" class="principal-video" autoplay muted loop playsinline>
-                <source src="static/videos/videoplayback.mp4" type="video/mp4">
-            </video>
-            <img id="miImagen" src="static/images/Prince.png" alt="Miniatura" class="hover-image">
+        <div class="bloque-titulo">
+          <h2>Descubre<br />nuevas historias</h2>
+          <div class="linea-azul"></div>
+          <p>
+            Explora nuestra biblioteca virtual y encuentra libros para todos los
+            gustos. Conocimiento, aventura y mucho más al alcance de un clic.
+          </p>
         </div>
-        <p class="pie-video">Conoce la Biblioteca Horizonte</p>
-    </div>
-</section>
-        <section class="derecha">
-            <h2>Libros recomendados:</h2>
 
-            <div class="contenedor">
-                <img src="static/images/Garcia.png" alt="Cien años de soledad">
-                <div class="info-tarjeta">
-                    <div class="texto-tarjeta">
-                        <h3>Cien años de soledad</h3>
-                        <p>Gabriel García Márquez</p>
-                        <a href="#" target="_blank">Ver más...</a>
-                    </div>
-                    <button class="btn-mas" type="button">+</button>
-                </div>
-            </div>
+        <div class="video-sub">
+          <div class="video-container" id="videoContainer">
+            <video
+              id="miVideo"
+              class="principal-video"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
+              <source src="static/videos/videoplayback.mp4" type="video/mp4" />
+            </video>
+            <img
+              id="miImagen"
+              src="static/images/Prince.png"
+              alt="Miniatura"
+              class="hover-image"
+            />
+          </div>
+          <p class="pie-video">Conoce la Biblioteca Horizonte</p>
+        </div>
+      </section>
 
-            <div class="contenedor">
-                <img src="static/images/Yuval.png" alt="Sapiens">
-                <div class="info-tarjeta">
-                    <div class="texto-tarjeta">
-                        <h3>Sapiens</h3>
-                        <p>Yuval Noah Harari</p>
-                        <a href="#" target="_blank">Ver más...</a>
-                    </div>
-                    <button class="btn-mas" type="button">+</button>
-                </div>
-            </div>
+      <!--Libros-->
+      <section class="derecha">
+        <h2>Libros recomendados:</h2>
 
-            <div class="contenedor">
-                <!-- Se corrigió el espacio en la URL de la imagen reemplazándolo por %20 -->
-                <img src="static/images/El%20principito.png" alt="El principito">
-                <div class="info-tarjeta">
-                    <div class="texto-tarjeta">
-                        <h3>El principito</h3>
-                        <p>Antoine de Saint-Exupéry</p>
-                        <a href="#" target="_blank">Ver más...</a>
-                    </div>
-                    <button class="btn-mas" type="button">+</button>
-                </div>
+        <div class="contenedor">
+          <img src="static/images/Garcia.png" alt="Cien años de soledad" />
+          <div class="info-tarjeta">
+            <div class="texto-tarjeta">
+              <h3>Cien años de soledad</h3>
+              <p>Gabriel García Márquez</p>
+              <a href="#" target="_blank">Ver más...</a>
             </div>
-        </section>
+            <button class="btn-mas" type="button">+</button>
+          </div>
+        </div>
+
+        <div class="contenedor">
+          <img src="static/images/Yuval.png" alt="Sapiens" />
+          <div class="info-tarjeta">
+            <div class="texto-tarjeta">
+              <h3>Sapiens</h3>
+              <p>Yuval Noah Harari</p>
+              <a href="#" target="_blank">Ver más...</a>
+            </div>
+            <button class="btn-mas" type="button">+</button>
+          </div>
+        </div>
+
+        <div class="contenedor">
+          <!-- Se corrigió el espacio en la URL de la imagen reemplazándolo por %20 -->
+          <img src="static/images/El%20principito.png" alt="El principito" />
+          <div class="info-tarjeta">
+            <div class="texto-tarjeta">
+              <h3>El principito</h3>
+              <p>Antoine de Saint-Exupéry</p>
+              <a href="#" target="_blank">Ver más...</a>
+            </div>
+            <button class="btn-mas" type="button">+</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="static/js/script.js"></script>
-</body>
+  </body>
 </html>
