@@ -1,0 +1,219 @@
+/* ================================
+   RESET BÁSICO
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #f5f5f5;
+}
+
+
+/* ================================
+   VARIABLES
+================================ */
+
+:root {
+    --azul: #1565c0;
+    --azul-claro: #eaf3ff;
+    --gris: #666;
+    --gris-claro: #eeeeee;
+    --blanco: #ffffff;
+    --negro: #222;
+}
+
+
+/* ================================
+   ELEMENTOS GENERALES
+================================ */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================================
+   MAIN
+================================ */
+
+main {
+    width: 100%;
+}
+
+/* ================================
+   DESTINOS
+================================ */
+
+.destinos-section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 60px auto;
+}
+
+
+
+
+/* CONTENEDOR TARJETAS */
+
+.destinos {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+
+/* TARJETA */
+
+.destino-card {
+    background-color: var(--blanco);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #ddd;
+
+    /*
+        El ancho base es 230px.
+        El elemento puede crecer y reducirse.
+    */
+    flex: 1 1 230px;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* IMAGEN TARJETA */
+
+.card-imagen {
+    min-height: 180px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+/*
+    Estos fondos representan
+    distintos destinos.
+*/
+
+.torres {
+    background: linear-gradient(
+        135deg,
+        #31566d,
+        #9dc5d8
+    );
+}
+
+.cusco {
+    background: linear-gradient(
+        135deg,
+        #8d6549,
+        #d9b88f
+    );
+}
+
+.cancun {
+    background: linear-gradient(
+        135deg,
+        #1594b6,
+        #8de2ed
+    );
+}
+
+.madrid {
+    background: linear-gradient(
+        135deg,
+        #75616a,
+        #d6a8b1
+    );
+}
+
+
+/* CONTENIDO */
+
+.card-contenido {
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    flex-grow: 1;
+}
+
+.pais {
+    color: var(--azul);
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+}
+
+.card-contenido h3 {
+    font-size: 1.3rem;
+}
+
+.descripcion {
+    color: var(--gris);
+}
+
+
+/* BOTÓN VER MÁS */
+
+.btn-ver-mas {
+    align-self: flex-start;
+
+    margin-top: auto;
+
+    padding: 8px 14px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: var(--azul);
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.btn-ver-mas:hover {
+    opacity: 0.9;
+}
+
+
+/* INFORMACIÓN OCULTA */
+
+.oculto {
+    display: none;
+}
